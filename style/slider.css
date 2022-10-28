@@ -1,0 +1,27 @@
+.client-slider{
+    overflow: hidden;
+}
+.client-slider-text{
+    position: absolute;
+    width: 1160px;
+}
+.ico-clients{
+    margin-top: 420px;
+    z-index: 123;
+}
+.client-feedback-bg .ico-clients .ico-client.active{
+    transform: translateY(-10px);
+    /* min-width: 65px;
+    height: 65px; */
+    transition: 0.5s;
+}
+.client-slider-text{
+    opacity: 0;
+    transform: translateY(250px);
+    transition: 0.5s;
+}
+.client-slider-text.active{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+}

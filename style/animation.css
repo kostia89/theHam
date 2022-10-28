@@ -1,0 +1,16 @@
+.img-hover:hover{
+    transform: translateY(50px);
+    transition: 0.5s;
+    opacity: 0;
+}
+.hover-blog{
+    opacity: 0;
+}
+.blog:hover .hover-blog{
+    transform: translateY(-209px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.blog:hover .img-hover{
+    opacity: 0;
+}
