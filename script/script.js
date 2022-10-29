@@ -1,15 +1,16 @@
 const disable = 'disable';
 const active = 'active';
 const serviceLists = document.querySelector('.service-lists')
-let serviceList = document.querySelectorAll('.service-list')
-let srserviceInfoBlock = document.querySelectorAll('.srservice-info-block')
+const serviceList = document.querySelectorAll('.service-list')
+const srserviceInfoBlock = document.querySelectorAll('.srservice-info-block')
 const infoBlock = document.querySelector('.service-info')
 
 const amazingBlog = document.querySelector('.work-tabs')
 const amazingTabs = document.querySelectorAll('.work-tab')
-let workBlogs = document.querySelector('.work-blogs')
+const workBlogs = document.querySelector('.work-blogs')
 const workBlog = document.querySelectorAll('.blog')
-let workBtn = document.querySelector('.work-btn')
+const workBtn = document.querySelector('.work-btn')
+const loader = document.querySelector('.loader')
 
 let arr =Array.from(workBlog)
 let flag = 12
@@ -51,10 +52,12 @@ function chengBlog(elem){
     }
     elem.target.classList.add(active)
 }
+
 function cheng(){
     flag = 24
+    loader.classList.add(active)
     workBtn.remove(workBtn)
-    workBlog.forEach((i)=>{
+    setTimeout(function(){ workBlog.forEach((i)=>{
         i.classList.add(active)
         i.classList.remove(disable)
     })
@@ -66,7 +69,9 @@ function cheng(){
         }
         
     })
-    
+    loader.classList.remove(active)
+    loader.classList.add(disable)
+    }, 3000)
 }
 
 

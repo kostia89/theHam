@@ -11,8 +11,6 @@
 }
 .client-feedback-bg .ico-clients .ico-client.active{
     transform: translateY(-10px);
-    /* min-width: 65px;
-    height: 65px; */
     transition: 0.5s;
 }
 .client-slider-text{
