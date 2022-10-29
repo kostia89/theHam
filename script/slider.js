@@ -12,7 +12,6 @@ nextBtn.addEventListener('click', plusSlide)
 
 let slideIndex = 0;
 
-// showSlides(slideIndex)
 
 function plusSlide(){
     showSlides(slideIndex += 1)
@@ -67,38 +66,4 @@ function findeClient(item){
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-// function chooseClient(elem){
-//     if(elem.clientIco !== active && elem.target.dataset.article){
-        
-//         clientIco.forEach((e)=>{
-//             e.classList.remove(active)
-//             findeClient(elem.target)
-            
-            
-//         })
-//     }
-//     elem.target.classList.add(active)        
-    
-// }
-// function findeClient(item){
-//     for(let i of clientText.children){
-//         if(i.dataset.article === item.dataset.article){
-//             i.classList.add('active')
-            
-//         }else{
-//             i.classList.remove('active')
-            
-//         }
-//     }
-// }
 
